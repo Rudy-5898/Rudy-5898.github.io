@@ -15,7 +15,6 @@ body {
     font-size: 25px;
     padding-top: 5px;
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);    
-    -webkit-background-clip: text;
     color: transparent;
 }
 h1 {
