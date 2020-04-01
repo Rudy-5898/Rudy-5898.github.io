@@ -1,0 +1,61 @@
+body {
+    background-color:grey
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.content {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+    font-size: 25px;
+    padding-top: 5px;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);    
+    -webkit-background-clip: text;
+    color: transparent;
+}
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+.IG
+{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+.topnav
+{
+    border-style: inset;
+    border-width: 10px;
+    border-color: grey;
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: rgb(red, green, blue);
+    font-size: 20px;
+}
+.topnav a:hover
+{
+    background-color: seashell;
+    color: red;
+}
+.topnav a.active 
+{
+    
+    background-color: black;
+    color: red;
+}
