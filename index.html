@@ -16,16 +16,20 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
         
-        <script>
-        $(document).ready(function() {
+        <script>$(document).ready(function() {
           // all of your JavaScript code goes here
-          var mydata = JSON.parse(data)
-        for (let i = 0; i< mydata['Artists'].length;i++)
-        {
-          Console.log(mydata['Artists'][i]['Name'])
-        }
-      })
-      
+          fetch ('data.json')
+        .then(response => {return response.json() })
+        .then(data => {
+          let music = data['value']
+          var artists = document.getElementsByClassName('column')
+          for (let i =0; i < data.length; i++)
+          {
+
+          }
+         })
+        })
+       
       
       </script>
     </head>
@@ -78,23 +82,39 @@
         </div>
         <div class="row">
           <div class="column">
+            <div id = "artimg">
             <img src="wedding.jpg">
+          </div>
+          <div id = "artimg">
             <img src="rocks.jpg">
+          </div>
+          </div>
+
+          <div class="column">
+              <div id = "artimg">
+            <img src="underwater.jpg">
+            </div>
+              <div id = "artimg">
+            <img src="ocean.jpg">
+              </div>
+          </div>
+
+          <div class="column">
+             <div id = "artimg">
+            <img src="wedding.jpg">
+            <div>
+              <div id = "artimg">
+            <img src="rocks.jpg">
+              </div>
             
           </div>
           <div class="column">
+              <div id = "artimg">
             <img src="underwater.jpg">
+            </div>
+              <div id = "artimg">
             <img src="ocean.jpg">
-          
-          </div>
-          <div class="column">
-            <img src="wedding.jpg">
-            <img src="rocks.jpg">
-            
-          </div>
-          <div class="column">
-            <img src="underwater.jpg">
-            <img src="ocean.jpg">
+              </div>
             
           </div>
         </div>
