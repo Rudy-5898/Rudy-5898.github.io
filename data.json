@@ -1,0 +1,52 @@
+[
+    {
+        "Artists":
+         [
+            {"Name":"Blue Oyster Cult", "Images":"Images/SecretTreaties.jpg", "Listens":750},
+            {"Name":"Queens of The Stoneage", "Images":"Images/SFTD.jpg", "Listens":300},
+            {"Name":"The Strokes", "Images":"Images/RoomonFire.jpg", "Listens": 150},
+            {"Name":"The Clash", "Images":"Images/LondonCalling.jpg","Listens":275},
+            {"Name":"Franz Ferdinand","Images":"Images/Franz.jpg","Listens":65},
+            {"Name":"Pink Floyd","Images":"Images/DarkSide.jpeg","Listens":320},
+            {"Name":"Them Crooked Vultures","Images":"Images/ThemCrookedVultures.jpg","Listens":"92"},
+            {"Name":"The White Stripes","Images":"Images/WhiteStripes.jpg","Listens":"232"}
+        ]
+    },
+    {
+        "Top_Songs":
+        [
+            {"Name":"Astronomy","Artist":"Blue Oyster Cult", "Listens":"80"},
+            {"Name":"Don't fear the Reaper", "Artist":"Blue Oyster Cult","Listens":55},
+            {"Name":"You've Got a Killer Scene There, Man...", "Artist":"Queens of the Stone Age","Listens":39},
+            {"Name":"Rock the Casbah", "Artist":"The Clash","Listens":27},
+            {"Name":"Barbed Wire Love", "Artist":"Stiff Little Fingers","Listens":26},
+            {"Name":"Deja Vu","Artist":"Dave Rodgers","Listens":22},
+            {"Name":"Time","Artist":"Pink Floyd","Listens":20},
+            {"Name":"Screwdriver","Artist":"The White Stripes","Listens":19},
+            {"Name":"Four Seasons in One Day","Artist":"Crowded House","Listens":18},
+            {"Name":"Then Came the Last Days of May","Artist":"Blue Oyster Cult","Listens":17}
+        ]
+    },
+    {
+        "Recent_Songs":
+        [
+            {"Name":"Perfect Water","Artist":"Blue Oyster Cult","Images":"Images/Mirrors.jpg","Last_Listened":"16:00"},
+            {"Name":"Astronomy","Artist":"Blue Oyster Cult","Images":"Images/SecretTreaties.jpg", "Last_Listened":"15:55"},
+            {"Name":"Bat out of Hell","Artist":"Meat Loaf","Images":"Images/BOoH.jpg","Last_Listened":"15:50"},
+            {"Name":"Alternative Ulster","Artist":"Stiff Little Fingers","Images":"Images/Inflammable.jpg","Last_Listened":"15:47"},
+            {"Name":"New Fang","Artist":"Them Crooked Vultures","Images":"Images/ThemCrookedVultures.jpg","Last_Listened":"15:43"},
+            {"Name":"Before the Kiss, a Redcap","Artist":"Blue Oyster Cult","Images":"Images/BOC.jpg","Last_Listened":"15:38"},
+            {"Name":"Humans Are Such Easy Prey","Artist":"Pertubator","Images":"Images/Pertubator.jpg","Last_Listened":"15:33"},
+            {"Name":"Epitaph", "Artist":"King Crimson","Images":"Images/KingCrimson.jpeg","Last_Listened":"15:25"},
+            {"Name":"Carry On Wayward Son", "Artist":"Kansas","Images":"Images/Kansas.jpg","Last_Listened":"15:20"},
+            {"Name":"Monsters","Artist":"Blue Oyster Cult","Images":"Images/Cultosaurus.jpg","Last_Listened":"15:15"}
+        ]
+    }
+] 
+        
+
+
+
+
+
+

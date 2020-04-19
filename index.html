@@ -6,26 +6,101 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <title>This is my new website!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">   
-        <link rel="stylesheet" href="/Assets/Css/style.css">
+        <title>Daniel Real FM</title>
+        <meta name="Daniels Music Website" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Css/style.css">
+        <script type="text/JavaScript" src="data.json"></script>
+        <script src="https://kit.fontawesome.com/db0a80de39.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        
+        <script>
+        $(document).ready(function() {
+          // all of your JavaScript code goes here
+          var mydata = JSON.parse(data)
+        for (let i = 0; i< mydata['Artists'].length;i++)
+        {
+          Console.log(mydata['Artists'][i]['Name'])
+        }
+      })
+      
+      
+      </script>
     </head>
+
     <body>
-        <div class="topnav">
-                <a class="active" href="file.html">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+        <div class="Navbar">
+            <div class="Navbar__Link Navbar__Link-brand">
+               <a class = "active" href ="#index">Website title</a>
+             </div>
+             <div class="Navbar__Link Navbar__Link-toggle">
+               <i class="fas fa-bars"></i>
+             </div>
+           <nav class="Navbar__Items">
+             <div class="Navbar__Link">
+               <a href ="#music">Longer Link</a>
+             </div>
+             <div class="Navbar__Link">
+               <a href ="#music2">Longer Link</a>
+             </div>
+             <div class="Navbar__Link">
+                <a href ="#music3">Link</a>
+             </div>
+           </nav>
+           <nav class="Navbar__Items Navbar__Items--right">
+             <div class="Navbar__Link">
+                <a href ="#music4">Link</a>
+             </div>
+             <div class="Navbar__Link">
+                <a href ="#music5">Link</a>
+             </div>
+           </nav>
         </div>
-        <h1>This a new website</h1>
-        <div>
-            <img src ="/Assets/img/duck.jpg" alt="this is a duck" class="center"/>
+        
+        <div class="Flex-container">
+            <div class="Banner-text">
+                <h1>This is banner text</h1>
+                <p>here is more banner text</p>
+            </div>
+            <div class = "Container">
+              <div class="Profile">
+                <img src="Images/swordguy.jpg">
+                <div class="Profile-text">
+                    <div><p>Daniel Real's profile</p>
+                    </div>
+                    <div><p>member since 2020</p>
+                    </div>
+                </div>
+              </div>
+            </div> 
         </div>
-        <div class="content">
-        <p>This is content I will pad</p>
+        <div class="row">
+          <div class="column">
+            <img src="wedding.jpg">
+            <img src="rocks.jpg">
+            
+          </div>
+          <div class="column">
+            <img src="underwater.jpg">
+            <img src="ocean.jpg">
+          
+          </div>
+          <div class="column">
+            <img src="wedding.jpg">
+            <img src="rocks.jpg">
+            
+          </div>
+          <div class="column">
+            <img src="underwater.jpg">
+            <img src="ocean.jpg">
+            
+          </div>
         </div>
-        <div ><img src="/Assets/img/IG.jpg" alt="The Imperial Guard" class="IG"/></div>
-        <script src="" async defer></script>
+      </div>
+        
+        <script src="Js/Script.js" async defer></script>
+        
     </body>
 </html>
