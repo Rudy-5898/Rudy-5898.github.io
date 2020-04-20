@@ -160,6 +160,27 @@ body, html {
   vertical-align: middle;
   width: 100%;
   padding: 0 4px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+}
+
+.container:hover img {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.Album-text {
+  position: absolute;
+  margin-top: 8px;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+  width: 100%;
+  padding: 0 4px;
 }
 
 @media screen and (max-width: 800px) {
