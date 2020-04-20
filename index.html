@@ -10,7 +10,6 @@
         <meta name="Daniels Music Website" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="Css/style.css">
-        <script type="text/JavaScript" src="data.json"></script>
         <script src="https://kit.fontawesome.com/db0a80de39.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -21,13 +20,14 @@
           fetch ('data.json')
         .then(response => {return response.json() })
         .then(data => {
-          let music = data['value']
-          var artists = document.getElementsByClassName('column')
-          for (let i =0; i < data.length; i++)
+          let music = data['Music']
+          console.log(data["Music"]);
+          var divs = (document.getElementsByClassName('artImg'));
+          for (let i =0; i < divs.length; i++)
           {
-
+            divs[i].src = (data['Music'][0]['Artists'][i]['Images']);
           }
-         })
+        })
         })
        
       
@@ -40,7 +40,7 @@
                <a class = "active" href ="#index">Website title</a>
              </div>
              <div class="Navbar__Link Navbar__Link-toggle">
-               <i class="fas fa-bars"></i>
+               <i><p>Drop Down</p></i>
              </div>
            <nav class="Navbar__Items">
              <div class="Navbar__Link">
@@ -70,7 +70,7 @@
             </div>
             <div class = "Container">
               <div class="Profile">
-                <img src="Images/swordguy.jpg">
+                <img class = "Profile-img" src="Images/swordguy.jpg"></img>
                 <div class="Profile-text">
                     <div><p>Daniel Real's profile</p>
                     </div>
@@ -79,46 +79,44 @@
                 </div>
               </div>
             </div> 
-        </div>
+          </div>
+          <div class= "Space"></div>
+          
         <div class="row">
           <div class="column">
-            <div id = "artimg">
-            <img src="wedding.jpg">
-          </div>
-          <div id = "artimg">
-            <img src="rocks.jpg">
-          </div>
-          </div>
-
-          <div class="column">
-              <div id = "artimg">
-            <img src="underwater.jpg">
-            </div>
-              <div id = "artimg">
-            <img src="ocean.jpg">
-              </div>
-          </div>
-
-          <div class="column">
-             <div id = "artimg">
-            <img src="wedding.jpg">
             <div>
-              <div id = "artimg">
-            <img src="rocks.jpg">
+               <img class = "artImg" src="" >
+             </div>
+            <div>
+               <img class = "artImg" src="" >
               </div>
-            
           </div>
           <div class="column">
-              <div id = "artimg">
-            <img src="underwater.jpg">
-            </div>
-              <div id = "artimg">
-            <img src="ocean.jpg">
+              <div> 
+                <img class = "artImg" src="" >
               </div>
-            
+              <div>
+                 <img class = "artImg" src="" >
+              </div>
+            </div>
+          <div class="column">
+             <div>
+                <img class = "artImg" src="" >
+             </div>
+              <div>
+                 <img class = "artImg" src="" >
+              </div>
+            </div>
+          <div class="column">
+            <div>
+               <img class = "artImg" src="" >
+            </div>
+            <div>
+                <img class = "artImg" src="" >
+            </div>
           </div>
         </div>
-      </div>
+      
         
         <script src="Js/Script.js" async defer></script>
         
