@@ -16,16 +16,20 @@
         crossorigin="anonymous"></script>
         
         <script>$(document).ready(function() {
-          // all of your JavaScript code goes here
+          //all of your JavaScript code goes here
           fetch ('data.json')
         .then(response => {return response.json() })
         .then(data => {
           let music = data['Music']
           console.log(data["Music"]);
-          var divs = (document.getElementsByClassName('artImg'));
-          for (let i =0; i < divs.length; i++)
+          console.log((data['Music'][0]['Artists'][0]['Images']))
+          var griddivs = (document.getElementsByClassName('imgcontainer'));
+          var gridTextdivs = (document.getElementsByClassName("grid-text"));
+          for (let i =0; i < griddivs.length; i++)
           {
-            divs[i].src = (data['Music'][0]['Artists'][i]['Images']);
+            griddivs[i].style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("+(data['Music'][0]['Artists'][i]['Images'])+")";
+            griddivs[i].style.backgroundColor = "#2f2f2f";
+            gridTextdivs[i].innerHTML= (data['Music'][0]["Artists"][i]['Name'])+", "+(data['Music'][0]["Artists"][i]['Listens'])+" Total Listens";
           }
         })
         })
@@ -66,11 +70,11 @@
         <div class="Flex-container">
             <div class="Banner-text">
                 <h1>This is banner text</h1>
-                <p>here is more banner text</p>
-            </div>
+                <p>This is more banner text</p>       
+              </div>
             <div class = "Container">
               <div class="Profile">
-                <img class = "Profile-img" src="Images/swordguy.jpg"></img>
+                <img class = "Profile-img" src="Images/swordguy.jpg"></img> 
                 <div class="Profile-text">
                     <div><p>Daniel Real's profile</p>
                     </div>
@@ -83,49 +87,44 @@
           <div class= "Space"></div>
           
         <div class="row">
-          <div class="column">
-            <div class ="container">
-               <img class = "artImg" src="" >
-               <div class = "Album-text">Secret Treaties</div>
-             </div>
-            <div class ="container">
-               <img class = "artImg" src="" >
-               <div class="Artist-Name"></div>
+            <div class="column">
+              <div class ="imgcontainer">
+                <div class = "text-container"> <div class= "grid-text"></div></div>
               </div>
-          </div>
-          <div class="column">
-              <div class ="container"> 
-                <img class = "artImg" src="" >
-                <div class="Artist-Name"></div>
-              </div>
-              <div class ="container">
-                 <img class = "artImg" src="" >
-                 <div class="Artist-Name"></div>
+              <div class ="imgcontainer">
+                <div class = "text-container"> <div class= "grid-text"></div></div>
               </div>
             </div>
-          <div class="column">
-             <div class ="container">
-                <img class = "artImg" src="" >
-                <div class="Artist-Name"></div>
-             </div>
-              <div class ="container">
-                 <img class = "artImg" src="" >
-                 <div class="Artist-Name"></div>
+            <div class="column">
+              <div class ="imgcontainer">
+                <div class = "text-container"> <div class= "grid-text"></div></div>
+              </div>
+              <div class ="imgcontainer">
+                <div class = "text-container"> <div class= "grid-text"></div></div>
               </div>
             </div>
-          <div class="column">
-            <div class ="container">
-               <img class = "artImg" src="" >
-               <div class="Artist-Name"></div>
+            <div class="column">
+              <div class ="imgcontainer">
+                <div class = "text-container"> <div class= "grid-text"></div></div>
+              </div>
+              <div class ="imgcontainer">
+                <div class = "text-container"> <div class= "grid-text"></div></div>
+              </div>
             </div>
-            <div>
-              <div class ="container">
-                <img class = "artImg" src="" >
-                <div class="Artist-Name"></div>
+            <div class="column">
+              <div class ="imgcontainer">
+                <div class = "text-container"> <div class= "grid-text"></div></div>
+              </div>
+              <div class ="imgcontainer">
+                <div class = "text-container"> <div class= "grid-text"></div></div>
               </div>
             </div>
           </div>
-        </div>
+          <div class = "Topsongs-Row">
+            <div class = "Topsongs-Column">
+              
+            </div>
+          </div>
       
         
         <script src="Js/Script.js" async defer></script>

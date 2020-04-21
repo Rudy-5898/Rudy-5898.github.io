@@ -1,14 +1,14 @@
 { "Music":[
     {
     "Artists":[
-          {"Name":"Blue Oyster Cult", "Images":"Images/SecretTreaties.jpg", "Listens":750},
-          {"Name":"Queens of The Stoneage", "Images":"Images/SFTD.jpg", "Listens":300},
-          {"Name":"The Strokes", "Images":"Images/RoomonFire.jpg", "Listens": 150},
-          {"Name":"The Clash", "Images":"Images/LondonCalling.jpg","Listens":275},
-          {"Name":"Franz Ferdinand","Images":"Images/Franz.jpg","Listens":65},
-          {"Name":"Pink Floyd","Images":"Images/DarkSide.jpeg","Listens":320},
-          {"Name":"Pertubator","Images":"Images/Pertubator.jpg","Listens":92},
-          {"Name":"The White Stripes","Images":"Images/WhiteStripes.jpg","Listens":232}
+          {"Name":"Blue Oyster Cult", "Images":"../Images/SecretTreaties.jpg", "Listens":750},
+          {"Name":"Queens of The Stoneage", "Images":"../Images/SFTD.jpg", "Listens":300},
+          {"Name":"The Strokes", "Images":"../Images/RoomonFire.jpg", "Listens": 150},
+          {"Name":"The Clash", "Images":"../Images/LondonCalling.jpg","Listens":275},
+          {"Name":"Franz Ferdinand","Images":"../Images/Franz.jpg","Listens":65},
+          {"Name":"Pink Floyd","Images":"../Images/DarkSide.jpeg","Listens":320},
+          {"Name":"Pertubator","Images":"../Images/Pertubator.jpg","Listens":92},
+          {"Name":"The White Stripes","Images":"../Images/WhiteStripes.jpg","Listens":232}
       ]
   },
   {
@@ -29,16 +29,16 @@
   {
       "Recent_Songs":
       [
-          {"Name":"Perfect Water","Artist":"Blue Oyster Cult","Images":"Images/Mirrors.jpg","Last_Listened":"16:00"},
-          {"Name":"Astronomy","Artist":"Blue Oyster Cult","Images":"Images/SecretTreaties.jpg", "Last_Listened":"15:55"},
-          {"Name":"Bat out of Hell","Artist":"Meat Loaf","Images":"Images/BOoH.jpg","Last_Listened":"15:50"},
-          {"Name":"Alternative Ulster","Artist":"Stiff Little Fingers","Images":"Images/Inflammable.jpg","Last_Listened":"15:47"},
-          {"Name":"New Fang","Artist":"Them Crooked Vultures","Images":"Images/ThemCrookedVultures.jpg","Last_Listened":"15:43"},
-          {"Name":"Before the Kiss, a Redcap","Artist":"Blue Oyster Cult","Images":"Images/BOC.jpg","Last_Listened":"15:38"},
-          {"Name":"Humans Are Such Easy Prey","Artist":"Pertubator","Images":"Images/Pertubator.jpg","Last_Listened":"15:33"},
-          {"Name":"Epitaph", "Artist":"King Crimson","Images":"Images/KingCrimson.jpeg","Last_Listened":"15:25"},
-          {"Name":"Carry On Wayward Son", "Artist":"Kansas","Images":"Images/Kansas.jpg","Last_Listened":"15:20"},
-          {"Name":"Monsters","Artist":"Blue Oyster Cult","Images":"Images/Cultosaurus.jpg","Last_Listened":"15:15"}
+          {"Name":"Perfect Water","Artist":"Blue Oyster Cult","Images":"../Images/Mirrors.jpg","Last_Listened":"16:00"},
+          {"Name":"Astronomy","Artist":"Blue Oyster Cult","Images":"../Images/SecretTreaties.jpg", "Last_Listened":"15:55"},
+          {"Name":"Bat out of Hell","Artist":"Meat Loaf","Images":"../Images/BOoH.jpg","Last_Listened":"15:50"},
+          {"Name":"Alternative Ulster","Artist":"Stiff Little Fingers","Images":"../Images/Inflammable.jpg","Last_Listened":"15:47"},
+          {"Name":"New Fang","Artist":"Them Crooked Vultures","Images":"../Images/ThemCrookedVultures.jpg","Last_Listened":"15:43"},
+          {"Name":"Before the Kiss, a Redcap","Artist":"Blue Oyster Cult","Images":"../Images/BOC.jpg","Last_Listened":"15:38"},
+          {"Name":"Humans Are Such Easy Prey","Artist":"Pertubator","Images":"../Images/Pertubator.jpg","Last_Listened":"15:33"},
+          {"Name":"Epitaph", "Artist":"King Crimson","Images":"../Images/KingCrimson.jpeg","Last_Listened":"15:25"},
+          {"Name":"Carry On Wayward Son", "Artist":"Kansas","Images":"../Images/Kansas.jpg","Last_Listened":"15:20"},
+          {"Name":"Monsters","Artist":"Blue Oyster Cult","Images":"../Images/Cultosaurus.jpg","Last_Listened":"15:15"}
       ]
   }
 ]
