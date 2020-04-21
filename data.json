@@ -14,16 +14,16 @@
   {
       "Top_Songs":
       [
-          {"Name":"Astronomy","Artist":"Blue Oyster Cult", "Listens":"80"},
+          {"Name":"Astronomy","Artist":"Blue Oyster Cult", "Listens":80},
           {"Name":"Don't fear the Reaper", "Artist":"Blue Oyster Cult","Listens":55},
-          {"Name":"You've Got a Killer Scene There, Man...", "Artist":"Queens of the Stone Age","Listens":39},
-          {"Name":"Rock the Casbah", "Artist":"The Clash","Listens":27},
-          {"Name":"Barbed Wire Love", "Artist":"Stiff Little Fingers","Listens":26},
-          {"Name":"Deja Vu","Artist":"Dave Rodgers","Listens":22},
-          {"Name":"Time","Artist":"Pink Floyd","Listens":20},
-          {"Name":"Screwdriver","Artist":"The White Stripes","Listens":19},
-          {"Name":"Four Seasons in One Day","Artist":"Crowded House","Listens":18},
-          {"Name":"Then Came the Last Days of May","Artist":"Blue Oyster Cult","Listens":17}
+          {"Name":"You've Got a Killer Scene There, Man...", "Artist":"Queens of the Stone Age","Listens":45},
+          {"Name":"Rock the Casbah", "Artist":"The Clash","Listens":37},
+          {"Name":"Barbed Wire Love", "Artist":"Stiff Little Fingers","Listens":36},
+          {"Name":"Deja Vu","Artist":"Dave Rodgers","Listens":32},
+          {"Name":"Time","Artist":"Pink Floyd","Listens":30},
+          {"Name":"Screwdriver","Artist":"The White Stripes","Listens":29},
+          {"Name":"Four Seasons in One Day","Artist":"Crowded House","Listens":28},
+          {"Name":"Then Came the Last Days of May","Artist":"Blue Oyster Cult","Listens":23}
       ]
   },
   {

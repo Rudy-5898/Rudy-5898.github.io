@@ -31,6 +31,19 @@
             griddivs[i].style.backgroundColor = "#2f2f2f";
             gridTextdivs[i].innerHTML= (data['Music'][0]["Artists"][i]['Name'])+", "+(data['Music'][0]["Artists"][i]['Listens'])+" Total Listens";
           }
+          console.log((data['Music'][1]['Top_Songs'][1]['Listens']));
+          var songdivs =(document.getElementsByClassName('Topsong-name'));
+          var artistdivs=(document.getElementsByClassName('Topsong-artist'))
+          var listensdivs=(document.getElementsByClassName('Topsong-listens'))
+          var bardivs=(document.getElementsByClassName('barchart'))
+          for (let i=0; i < songdivs.length; i++)
+          {
+            songdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Name'])
+            artistdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Artist'])
+            listensdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Listens'])
+            bardivs[i].style.width= (((data['Music'][1]['Top_Songs'][i]['Listens'])/100)*30)+"%";
+          }
+          
         })
         })
        
@@ -119,12 +132,68 @@
                 <div class = "text-container"> <div class= "grid-text"></div></div>
               </div>
             </div>
-          </div>
-          <div class = "Topsongs-Row">
-            <div class = "Topsongs-Column">
-              
-            </div>
-          </div>
+         </div>
+         <div class= "Space"></div>
+              <div class = "Topsongs-Row">
+                
+               <div class = "Topsongs-Column">
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                 <div class="Topsong-name"></div>
+                </div>
+                <div class = "Topsongs-Column">
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                  <div class="Topsong-artist"></div>
+                </div>
+                <div class = "Topsongs-Column">
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                 </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                  </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                   </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                   </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                   </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                   </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                   </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                   </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                   </div>
+                 <div class = "barchart">
+                   <div class="Topsong-listens"></div>
+                   </div>
+                </div>
+                
+              </div>
       
         
         <script src="Js/Script.js" async defer></script>
