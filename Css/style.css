@@ -149,8 +149,8 @@ body, html {
 
 .column {
   
-  flex: 25%;
-  max-width: 20%;
+  
+  max-width: 25%;
   padding: 0 4px;
 }
 
@@ -188,40 +188,64 @@ color: white;
     max-width: 100%;
   }
 }
-.Topsongs-Row {
-  color: #f2f2f2;
+.Topsongs-container {
   display: flex;
+  width: 100%;
+  flex-direction: column;
+  
+}
+
+.Topsongs-row {
+  display: flex;
+  color: #f2f2f2;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 0px;
-  
 }
-.Topsongs-Column {
-  
-  flex: 20% ;
-  max-width: 30%;
-  padding: 0 0px;
+     
+.Spacer {
+  flex: 6%;
 }
-                
+
 .Topsong-name{
-  border-bottom-style: solid;
+  flex: 5%;
+  padding-bottom: 3px;
+  padding-top: 3px;
   border-width: 1px;
+  border-bottom-style: ridge;
+  font-size: large;
 }
 .Topsong-artist{
-  border-bottom-style: solid;
+  
+  flex: 10%;
+  padding-bottom: 3px;
+  padding-top: 3px;
   border-width: 1px;
+  border-bottom-style: ridge;
+}
+
+.bar-container {
+  flex: 10%
 }
 .barchart{
+  padding-top: 13px;
   filter: alpha(opacity=60);
   opacity: 0.6;
   background-color: #DC143C;
 }
 .Topsong-listens{
+  
   color: black;
   filter: alpha(opacity=100);
   opacity: 1;
-  margin-top: 1px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-width: 1px;
 }
-.heart{
-  max-width: 3%;
-  filter: brightness(20%);
+
+.Topsongs-row img {
+ max-width: 3%;
+ max-height: 3%;
+ padding-right: 10px;
 }
+
+

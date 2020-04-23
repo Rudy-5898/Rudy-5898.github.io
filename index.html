@@ -36,6 +36,7 @@
           var artistdivs=(document.getElementsByClassName('Topsong-artist'))
           var listensdivs=(document.getElementsByClassName('Topsong-listens'))
           var bardivs=(document.getElementsByClassName('barchart'))
+          console.log(songdivs);
           for (let i=0; i < songdivs.length; i++)
           {
             songdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Name'])
@@ -134,65 +135,118 @@
             </div>
          </div>
          <div class= "Space"></div>
-              <div class = "Topsongs-Row">
-                
-               <div class = "Topsongs-Column">
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                 <div class="Topsong-name"></div>
-                </div>
-                <div class = "Topsongs-Column">
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                  <div class="Topsong-artist"></div>
-                </div>
-                <div class = "Topsongs-Column">
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                 </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
+         <div><h2>Top Songs:</h2></div>
+              <div class=Topsongs-container>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
                   </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                   </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                   </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                   </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                   </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                   </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                   </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                   </div>
-                 <div class = "barchart">
-                   <div class="Topsong-listens"></div>
-                   </div>
-                </div>
-                
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Topsongs-row">
+                    <div class="Spacer"></div>
+                    <img src="Images/heart.webp">
+                    <div class ="Topsong-name"></div>
+                    <div class ="Topsong-artist"></div>
+                    <div class = "bar-container">
+                      <div class = "barchart">
+                        <div class ="Topsong-listens"></div>
+                      </div>
+                    </div>
+                  </div>
               </div>
       
         
