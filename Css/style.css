@@ -194,6 +194,19 @@ color: white;
   flex-direction: column;
   
 }
+.headings{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.songheader{
+  flex: 20%;
+  color: #f2f2f2;
+}
+.songspacer{
+  flex: 20%;
+}
 
 .Topsongs-row {
   display: flex;
@@ -207,7 +220,7 @@ color: white;
 }
 
 .Topsong-name{
-  flex: 5%;
+  flex: 10%;
   padding-bottom: 3px;
   padding-top: 3px;
   border-width: 1px;
@@ -246,6 +259,10 @@ color: white;
  max-width: 3%;
  max-height: 3%;
  padding-right: 10px;
+}
+
+.hearts{
+  filter: brightness(50%);
 }
 
 

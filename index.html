@@ -23,8 +23,8 @@
           let music = data['Music']
           console.log(data["Music"]);
           console.log((data['Music'][0]['Artists'][0]['Images']))
-          var griddivs = (document.getElementsByClassName('imgcontainer'));
-          var gridTextdivs = (document.getElementsByClassName("grid-text"));
+          let griddivs = (document.getElementsByClassName('imgcontainer'));
+          let gridTextdivs = (document.getElementsByClassName("grid-text"));
           for (let i =0; i < griddivs.length; i++)
           {
             griddivs[i].style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("+(data['Music'][0]['Artists'][i]['Images'])+")";
@@ -32,10 +32,10 @@
             gridTextdivs[i].innerHTML= (data['Music'][0]["Artists"][i]['Name'])+", "+(data['Music'][0]["Artists"][i]['Listens'])+" Total Listens";
           }
           console.log((data['Music'][1]['Top_Songs'][1]['Listens']));
-          var songdivs =(document.getElementsByClassName('Topsong-name'));
-          var artistdivs=(document.getElementsByClassName('Topsong-artist'))
-          var listensdivs=(document.getElementsByClassName('Topsong-listens'))
-          var bardivs=(document.getElementsByClassName('barchart'))
+          let songdivs =(document.getElementsByClassName('Topsong-name'));
+          let artistdivs=(document.getElementsByClassName('Topsong-artist'))
+          let listensdivs=(document.getElementsByClassName('Topsong-listens'))
+          let bardivs=(document.getElementsByClassName('barchart'))
           console.log(songdivs);
           for (let i=0; i < songdivs.length; i++)
           {
@@ -136,10 +136,19 @@
          </div>
          <div class= "Space"></div>
          <div><h2>Top Songs:</h2></div>
+         <div class= "headings"> 
+          <div class="songspacer"></div>
+          <div class="songheader"><h3>Title:</h3></div>
+          <div class="songheader"><h3>Artist:</h3></div>
+          <div class="songheader"><h3>Listens:</h3></div>
+        </div>  
               <div class=Topsongs-container>
                   <div class="Topsongs-row">
+                    
+                  </div>
+                  <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart1" class="hearts" src="Images/heart.webp" onclick="heart1Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -150,7 +159,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart2" class="hearts" src="Images/heart.webp" onclick="heart2Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -161,7 +170,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart3" class="hearts" src="Images/heart.webp" onclick="heart3Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -172,7 +181,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart4" class="hearts" src="Images/heart.webp" onclick="heart4Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -183,7 +192,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart5" class="hearts" src="Images/heart.webp" onclick="heart5Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -194,7 +203,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart6" class="hearts" src="Images/heart.webp" onclick="heart6Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -205,7 +214,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart7" class="hearts" src="Images/heart.webp" onclick="heart7Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -216,7 +225,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart8" class="hearts" src="Images/heart.webp" onclick="heart8Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -227,7 +236,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart9" class="hearts" src="Images/heart.webp" onclick="heart9Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
@@ -238,7 +247,7 @@
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
-                    <img src="Images/heart.webp">
+                    <img id = "heart10" class="hearts" src="Images/heart.webp"onclick="heart10Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
