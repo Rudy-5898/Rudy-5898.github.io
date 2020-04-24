@@ -265,4 +265,28 @@ color: white;
   filter: brightness(50%);
 }
 
+.Recentsong-name{
+  flex: 10%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-width: 1px;
+  border-bottom-style: ridge;
+  font-size: large;
+}
 
+.Recentsong-artist{
+  
+  flex: 10%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-width: 1px;
+  border-bottom-style: ridge;
+}
+
+.Recent-time{
+  padding-top: 5px;
+}
+
+.RSpacer{
+  flex: 4%;
+}

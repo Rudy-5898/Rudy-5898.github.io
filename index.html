@@ -21,8 +21,7 @@
         .then(response => {return response.json() })
         .then(data => {
           let music = data['Music']
-          console.log(data["Music"]);
-          console.log((data['Music'][0]['Artists'][0]['Images']))
+         
           let griddivs = (document.getElementsByClassName('imgcontainer'));
           let gridTextdivs = (document.getElementsByClassName("grid-text"));
           for (let i =0; i < griddivs.length; i++)
@@ -31,7 +30,7 @@
             griddivs[i].style.backgroundColor = "#2f2f2f";
             gridTextdivs[i].innerHTML= (data['Music'][0]["Artists"][i]['Name'])+", "+(data['Music'][0]["Artists"][i]['Listens'])+" Total Listens";
           }
-          console.log((data['Music'][1]['Top_Songs'][1]['Listens']));
+          
           let songdivs =(document.getElementsByClassName('Topsong-name'));
           let artistdivs=(document.getElementsByClassName('Topsong-artist'))
           let listensdivs=(document.getElementsByClassName('Topsong-listens'))
@@ -44,7 +43,17 @@
             listensdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Listens'])
             bardivs[i].style.width= (((data['Music'][1]['Top_Songs'][i]['Listens'])/100)*30)+"%";
           }
-          
+          let rsongdivs=(document.getElementsByClassName("Recentsong-name"))
+          let rartistdivs=(document.getElementsByClassName("Recentsong-artist"))
+          let rimgdivs=(document.querySelectorAll("#recentimg"))
+          let rlistendivs =(document.getElementsByClassName("Recent-time"))
+          for (let i=0; i<rsongdivs.length; i++)
+          {
+            rsongdivs[i].innerHTML= (data['Music'][2]['Recent_Songs'][i]['Name'])
+            rartistdivs[i].innerHTML= (data['Music'][2]['Recent_Songs'][i]['Artist'])
+            rimgdivs[i].src = (data['Music'][2]['Recent_Songs'][i]['Images'])
+            rlistendivs[i].innerHTML = (data['Music'][2]['Recent_Songs'][i]['Last_Listened'])
+          }
         })
         })
        
@@ -55,36 +64,27 @@
     <body>
         <div class="Navbar">
             <div class="Navbar__Link Navbar__Link-brand">
-               <a class = "active" href ="#index">Website title</a>
+               <a class = "active" href ="#index">Home</a>
              </div>
              <div class="Navbar__Link Navbar__Link-toggle">
                <i><p>Drop Down</p></i>
              </div>
            <nav class="Navbar__Items">
              <div class="Navbar__Link">
-               <a href ="#music">Longer Link</a>
-             </div>
-             <div class="Navbar__Link">
-               <a href ="#music2">Longer Link</a>
-             </div>
-             <div class="Navbar__Link">
-                <a href ="#music3">Link</a>
+               <a href ="#music">Contact us</a>
              </div>
            </nav>
            <nav class="Navbar__Items Navbar__Items--right">
              <div class="Navbar__Link">
-                <a href ="#music4">Link</a>
-             </div>
-             <div class="Navbar__Link">
-                <a href ="#music5">Link</a>
+                <a href ="#music4">About</a>
              </div>
            </nav>
         </div>
         
         <div class="Flex-container">
             <div class="Banner-text">
-                <h1>This is banner text</h1>
-                <p>This is more banner text</p>       
+                <h1>Daniel Real's Music</h1>
+                <p>Beats by Daniel</p>       
               </div>
             <div class = "Container">
               <div class="Profile">
@@ -144,7 +144,6 @@
         </div>  
               <div class=Topsongs-container>
                   <div class="Topsongs-row">
-                    
                   </div>
                   <div class="Topsongs-row">
                     <div class="Spacer"></div>
@@ -257,7 +256,99 @@
                     </div>
                   </div>
               </div>
-      
+              
+              <div class= "Space"></div>
+         <div><h2>Recent Songs:</h2></div>
+         <div class= "headings"> 
+          <div class="songspacer"></div>
+          <div class="songheader"><h3>Title:</h3></div>
+          <div class="songheader"><h3>Artist:</h3></div>
+          <div class="songheader"><h3>Last Listened:</h3></div>
+        </div> 
+        <div class=Topsongs-container>
+          <div class="Topsongs-row">
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+          <div class="Topsongs-row">
+            <div class="RSpacer"></div>
+            <img id="recentimg">
+            <div class ="Recentsong-name"></div>
+            <div class ="Recentsong-artist"></div>
+            <div class = Recent-time></div>
+            <div class="RSpacer"></div>
+          </div>
+      </div>
         
         <script src="Js/Script.js" async defer></script>
         
