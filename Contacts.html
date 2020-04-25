@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Css/style.css">
+        <script src="https://kit.fontawesome.com/db0a80de39.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="Navbar"> <!--Navbar for navigation-->
+            <div class="Navbar__Link Navbar__Link-brand">
+               <a class = "active" >Contact us</a>
+             </div>
+             <div class="Navbar__Link Navbar__Link-toggle">
+               <i class="fas fa-bars"></i>
+             </div>
+           <nav class="Navbar__Items">
+             <div class="Navbar__Link">
+               <a href ="index.html">Home</a>
+             </div>
+           </nav>
+        </div>
+        <div class="Flex-container"> <!--Holds the banner and child text-->
+            <div class="Banner-text">
+                <h1>Daniel Real's Music</h1>
+                <p>Beats by Daniel</p>       
+            </div>
+            <div class = "Container">
+              <div class="Profile">
+                <img class = "Profile-img" src="Images/swordguy.jpg" alt="progile img">
+                <div class="Profile-text">
+                    <div><p>Daniel Real's profile</p>
+                    </div>
+                    <div><p>member since 2020</p>
+                    </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+        <div class= "Space"></div>
+        <div class ="feedback">
+            <label for= "Eaddress">Email Address:</label><br> <!--Form for adding comments-->
+            <input type="text" id="Eaddress" name="Eaddress"><br>
+            <label for= "Ename">Name</label><br>
+            <input type= "text" id= "Ename" name="Ename"><br>
+            <label for= "Enumber">Phone Number</label><br>
+            <input type= "text" id ="Enumber" name= "Enumber"><br>
+            <label for= "Ecomment">Comment:</label><br>
+            <textarea id="Ecomment" class="Ecomment" name="Ecomment" rows = "5" cols = "50">
+            Enter your feedback
+            </textarea><br>
+            <input type="submit" value="Send Feedback" onclick="processEcomment();">
+        </div>
+        <script src="Js/Script.js" async defer></script>
+    </body>
+</html>

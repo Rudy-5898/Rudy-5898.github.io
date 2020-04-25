@@ -313,3 +313,7 @@ color: white;
 .comspacer{
   flex: 100%;
 }
+.feeback {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -65,6 +65,10 @@ function processComment() { //This appends data from form to the bottom of the p
   
 }
 
+function processEcomment() {
+  alert("Thank you for you message!");
+}
+
 function heart1Function() { //This makes the hearts change brightness on click
  let heart=document.getElementById("heart1")
 console.log(heart)
