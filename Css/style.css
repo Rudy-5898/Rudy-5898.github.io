@@ -310,7 +310,10 @@ color: white;
 }
 
 .comment{
-  flex:30%;
+  flex: 30%;
+  max-width: 30%;
   flex-wrap: wrap;
-  
+}
+.comspacer{
+  flex: 100%;
 }

@@ -51,7 +51,8 @@ function processComment() {
   let commentval = document.querySelector('#subcomment').value
   let comcontainer =document.getElementById('commentbox')
   let namediv = document.createElement('div')
-  let linebr = document.createElement('br')
+  let linebr = document.createElement('div')
+  linebr.classList.add('comspacer')
   console.log(linebr)
   namediv.classList.add('commentname')
   let commentdiv = document.createElement('div')
@@ -59,8 +60,9 @@ function processComment() {
   namediv.innerHTML=(nameval+":")
   commentdiv.innerHTML=(commentval)
   comcontainer.append(namediv)
-  comcontainer.append(commentdiv)
   comcontainer.append(linebr)
+  comcontainer.append(commentdiv)
+  
 }
 
 function heart1Function() {
