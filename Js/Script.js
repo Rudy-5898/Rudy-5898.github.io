@@ -46,6 +46,23 @@ function classToggle() {
   document.querySelector('.Navbar__Link-toggle')
     .addEventListener('click', classToggle);
 
+function processComment() {
+  let nameval = document.querySelector('#subname').value
+  let commentval = document.querySelector('#subcomment').value
+  let comcontainer =document.getElementById('commentbox')
+  let namediv = document.createElement('div')
+  let linebr = document.createElement('br')
+  console.log(linebr)
+  namediv.classList.add('commentname')
+  let commentdiv = document.createElement('div')
+  commentdiv.classList.add('comment')
+  namediv.innerHTML=(nameval+":")
+  commentdiv.innerHTML=(commentval)
+  comcontainer.append(namediv)
+  comcontainer.append(commentdiv)
+  comcontainer.append(linebr)
+}
+
 function heart1Function() {
  let heart=document.getElementById("heart1")
 console.log(heart)

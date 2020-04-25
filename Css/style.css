@@ -290,3 +290,27 @@ color: white;
 .RSpacer{
   flex: 4%;
 }
+
+.comment {
+  width: 25%;
+  height: 10%;
+ 
+}
+
+.combox {
+  display: flex;
+  width: 100%;
+  align-self: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.commentname{
+  flex:100%;
+  
+}
+
+.comment{
+  flex:30%;
+  flex-wrap: wrap;
+  
+}
