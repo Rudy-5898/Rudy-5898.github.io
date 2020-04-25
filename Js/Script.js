@@ -26,7 +26,7 @@ fetch ('data.json')
           }
           let rsongdivs=(document.getElementsByClassName("Recentsong-name"))
           let rartistdivs=(document.getElementsByClassName("Recentsong-artist"))
-          let rimgdivs=(document.querySelectorAll("#recentimg"))
+          let rimgdivs=(document.getElementsByClassName("recentimg"))
           let rlistendivs =(document.getElementsByClassName("Recent-time"))
           for (let i=0; i<rsongdivs.length; i++)
           {
