@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <div class="Navbar">
+        <div class="Navbar"> <!--Navbar for navigation-->
             <div class="Navbar__Link Navbar__Link-brand">
                <a class = "active" href ="#index">Home</a>
              </div>
@@ -33,7 +33,7 @@
            </nav>
         </div>
         
-        <div class="Flex-container">
+        <div class="Flex-container"> <!--Holds the banner and child text-->
             <div class="Banner-text">
                 <h1>Daniel Real's Music</h1>
                 <p>Beats by Daniel</p>       
@@ -50,9 +50,9 @@
               </div>
             </div> 
           </div>
-          <div class= "Space"></div>
+          <div class= "Space"></div> <!--Adds whitespace-->
           
-        <div class="row">
+        <div class="row">  <!--Creates the flex table of images-->
             <div class="column">
               <div class ="imgcontainer">
                 <div class = "text-container"> <div class= "grid-text"></div></div>
@@ -90,20 +90,20 @@
          <div><h2>Top Songs:</h2></div>
          <div class= "headings"> 
           <div class="songspacer"></div>
-          <div class="songheader"><h3>Title:</h3></div>
+          <div class="songheader"><h3>Title:</h3></div> <!--Table headings-->
           <div class="songheader"><h3>Artist:</h3></div>
           <div class="songheader"><h3>Listens:</h3></div>
         </div>  
-              <div class=Topsongs-container>
+              <div class=Topsongs-container> <!--Creates flex table for top song info-->
                   <div class="Topsongs-row">
                   </div>
                   <div class="Topsongs-row">
-                    <div class="Spacer"></div>
+                    <div class="Spacer"></div> <!--Heart function changes heart from being darker to normal brightness-->
                     <img id = "heart1" class="hearts" src="Images/heart.webp" alt="heart function" onclick="heart1Function()">
                     <div class ="Topsong-name"></div>
                     <div class ="Topsong-artist"></div>
                     <div class = "bar-container">
-                      <div class = "barchart">
+                      <div class = "barchart"> <!--Bar chart uses the listen data and calculates a porportionate length for the bar-->
                         <div class ="Topsong-listens"></div>
                       </div>
                     </div>
@@ -210,7 +210,7 @@
               </div>
               
               <div class= "Space"></div>
-         <div><h2>Recent Songs:</h2></div>
+         <div><h2>Recent Songs:</h2></div> <!--Creates Recent songs flex table. Similar to top songs, but with album images replacing hearts-->
          <div class= "headings"> 
           <div class="songspacer"></div>
           <div class="songheader"><h3>Title:</h3></div>
@@ -303,7 +303,7 @@
       </div>
       <div class = "Space"></div>
       
-      <label for= "subname">Name:</label><br>
+      <label for= "subname">Name:</label><br> <!--Form for adding comments-->
       <input type="text" id="subname" name="subname"><br>
       <label for= "subcomment">Comment:</label><br>
       <textarea  id="subcomment" class="comment" name="subcomment" rows = "5" cols = "50">

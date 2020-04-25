@@ -1,9 +1,9 @@
-fetch ('data.json')
+fetch ('data.json') //This gets all the data from local JSON
         .then(response => {return response.json() })
         .then(data => {
-          let music = data['Music']
+          let music = data['Music'] 
          
-          let griddivs = (document.getElementsByClassName('imgcontainer'));
+          let griddivs = (document.getElementsByClassName('imgcontainer')); //This changes innerHTML of img grid, to show data
           let gridTextdivs = (document.getElementsByClassName("grid-text"));
           for (let i =0; i < griddivs.length; i++)
           {
@@ -12,19 +12,19 @@ fetch ('data.json')
             gridTextdivs[i].innerHTML= (data['Music'][0]["Artists"][i]['Name'])+", "+(data['Music'][0]["Artists"][i]['Listens'])+" Total Listens";
           }
           
-          let songdivs =(document.getElementsByClassName('Topsong-name'));
+          let songdivs =(document.getElementsByClassName('Topsong-name')); //This changes innerHTML of top songs to show JSON data
           let artistdivs=(document.getElementsByClassName('Topsong-artist'))
           let listensdivs=(document.getElementsByClassName('Topsong-listens'))
           let bardivs=(document.getElementsByClassName('barchart'))
           console.log(songdivs);
           for (let i=0; i < songdivs.length; i++)
           {
-            songdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Name'])
+            songdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Name']) 
             artistdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Artist'])
             listensdivs[i].innerHTML= (data['Music'][1]['Top_Songs'][i]['Listens'])
             bardivs[i].style.width= (((data['Music'][1]['Top_Songs'][i]['Listens'])/100)*30)+"%";
           }
-          let rsongdivs=(document.getElementsByClassName("Recentsong-name"))
+          let rsongdivs=(document.getElementsByClassName("Recentsong-name")) //This changes innerHTML of recent songs to JSON data
           let rartistdivs=(document.getElementsByClassName("Recentsong-artist"))
           let rimgdivs=(document.getElementsByClassName("recentimg"))
           let rlistendivs =(document.getElementsByClassName("Recent-time"))
@@ -37,7 +37,7 @@ fetch ('data.json')
           }
         })
 
-function classToggle() {
+function classToggle() {    //This lets the navbar change to dropdown on smaller screens
     const navs = document.querySelectorAll('.Navbar__Items')
     
     navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
@@ -46,7 +46,7 @@ function classToggle() {
   document.querySelector('.Navbar__Link-toggle')
     .addEventListener('click', classToggle);
 
-function processComment() {
+function processComment() { //This appends data from form to the bottom of the page
   let nameval = document.querySelector('#subname').value
   let commentval = document.querySelector('#subcomment').value
   let comcontainer =document.getElementById('commentbox')
@@ -65,7 +65,7 @@ function processComment() {
   
 }
 
-function heart1Function() {
+function heart1Function() { //This makes the hearts change brightness on click
  let heart=document.getElementById("heart1")
 console.log(heart)
 if (heart.style.filter == "brightness(100%)")
